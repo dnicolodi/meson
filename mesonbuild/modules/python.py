@@ -471,7 +471,7 @@ class PythonModule(ExtensionModule):
             if python.sanity(state):
                 return python
             else:
-                sanitymsg = f'{python} is not a valid python or it is missing distutils'
+                sanitymsg = f'{python} is not a valid python'
                 if required:
                     raise mesonlib.MesonException(sanitymsg)
                 else:
